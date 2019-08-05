@@ -5,8 +5,10 @@
 </head>
 
 <body>
-    <p>File uploaded successfully</p>
-    <p>File Name: {{name}}</p>
+    <h1>File uploaded successfully</h1>
+    <a href="{{ url_for('home') }}">Home</a>
+    <p>File Name: {{ name }}</p>
+    <p>File Content: {{ content }}</p>
 </body>
 
 </html>
