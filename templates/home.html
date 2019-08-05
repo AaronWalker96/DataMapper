@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Data Mapper</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/page.css') }}">
+</head>
+
+<body>
+    {% extends "template.html" %}
+    {% block content %}
+    <div class="content">
+        <p>Data Mapper - Home page</p>
+        <form action = "/success" method = "post" enctype="multipart/form-data">  
+            <input type="file" name="file" />  
+            <input type = "submit" value="Upload">  
+        </form>  
+    </div>
+    {% endblock %}
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Flask Parent Template</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/template.css') }}">
+</head>
+
+<body>
+    <header>
+        <div id="container">
+            <div class="inner-menu">
+                <h1 class="logo">Data Mapper</h1>
+                <ul class="menu">
+                    <strong>
+                        <li class="navitem"><a href="{{ url_for('home') }}">Home</a></li>
+                        <li class="navitem"><a href="{{ url_for('about') }}">About</a></li>
+                    </strong>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="content-body">
+        <div class="center-content">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+</body>
+
+</html>
