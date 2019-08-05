@@ -3,16 +3,17 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Success</title>
+    <title>About</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/page.css') }}">
 </head>
 
 <body>
     {% extends "template.html" %}
     {% block content %}
-    <p>File uploaded successfully</p>
-    <p>File Name: {{ name }}</p>
-    <p>File Content: {{ content }}</p>
+    <div class="content">
+        <p>Data Mapper - About</p>
+        <p>About page</p>
+    </div>
     {% endblock %}
 </body>
 
